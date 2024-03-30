@@ -1,0 +1,297 @@
+/* CSS Document */
+* {
+  	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Century Gothic", "Helvetica Neue", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+	width: 100%;
+	height: 100%;
+}
+
+/* header styles */
+
+.container-fluid {
+	height: 50px;
+	width: 100%;
+	font-weight: bold;
+	background-color: #333;
+	backdrop-filter: blur(100px);
+	opacity: 97%;
+	position: fixed;
+	z-index: 9999;
+
+}
+
+.navigation {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-list {
+	display: flex;
+	list-style: none;
+}
+
+.list-links {
+	display: flex;
+	margin: 10px;
+}
+
+.nav-links, .nav-link-a {
+	text-decoration: none;
+	color: whitesmoke;
+	margin: 0px 10px;
+	font-size: 15px;
+	opacity: 60%;
+}
+
+.nav-link-a {
+	color: #71C8FE;
+	font-weight: bold;
+}
+
+.nav-links:hover {
+	opacity: 100%;
+	transition: opacity 1s ease-in-out;
+}
+
+/* body styles */
+body {
+	width: 100%;
+	height: 100%;
+}
+/* section styles */
+.section {
+	margin: 100px;
+	padding: 100px 0px;
+	scroll-margin-top: 50px;
+}
+/*cover image styles */
+#cover-img {
+	object-fit: cover;
+	object-position: center top;
+	width: 100%;
+	height: 850px;
+}
+
+#front-text{
+	position:absolute;
+	text-align:left;
+	font-weight: bold;
+	display:flex;
+	height:100px;
+	width:100px;
+	left:50%;
+	top:50%;
+	margin-top:-50px;
+	margin-left:-50px;
+	color:white;
+	background-color: black;
+	opacity: 90%;
+	font-size: 60px;
+	transition: font-size 0.5s ease;
+  }
+
+  /* Define the hover state of the text */
+  #front-text:hover {
+	font-size: 30px;
+	-o-animation-delay: 22s;
+  }
+
+/* about me section styles */
+.about-title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+#about {
+	margin: 0px 100px 0px 100px;
+}
+
+#about-paragraphs {
+	font-size: 20px;
+}
+
+/* portfolio section styles */
+.portfolio-title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-weight: bold;
+}
+#portfolio {
+	text-align: center;
+}
+#portfolio .card {
+	margin: 5px 5px 0px 0px;
+	display: inline-block;
+}
+.card-title {
+	font-weight: bold;
+}
+
+/* socials section styles */
+#socials {
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#section-pic {
+	object-fit: cover;
+	object-position: center center;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+}
+
+.socials-title {
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+}
+
+#socials-description {
+	margin-bottom: 20px;
+}
+
+#button-container{
+	display: flex;
+	flex-direction: column;
+}
+.social-link {
+	width: 700px; 
+	height: 100px;
+	border-radius: 909px;
+	border: none;
+	margin: 5px;
+	font-weight: bold;
+	background-color: black;
+}
+
+.social-link a {
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
+}
+/* portfolio section styles */
+#contact {
+	background-color: lightblue;
+}
+.contact-title {
+	font-weight: bold;
+}
+
+/* footer styles */
+footer {
+	text-align: center;
+	padding: 20px;
+	background-color: #333;
+	color: #fff;
+	width: 100%;
+}
+
+/* start of landing page css */
+
+#landing-page, #lp-body{
+	height: 100%; 
+	width: 100%;
+  }
+  #message-container{
+	background-image: url('/images/coverimg.JPG');
+	background-size: cover;
+	margin: 3vb;
+	height: 94vb;
+  }
+  #message-text{
+	position:absolute;
+	text-align:center;
+	display:flex;
+	height:100px;
+	width:100px;
+	left:50%;
+	top:50%;
+	margin-top:-50px;
+	margin-left:-50px;
+	color:white;
+	background-color: black;
+  }
+
+  /* end of landing page css */
+
+@media (max-width: 700px){
+	
+#front-text{
+	position:absolute;
+	text-align:center;
+	display:flex;
+	height:100px;
+	width:100px;
+	left:50%;
+	top:50%;
+	margin-left:-25%;
+	color:white;
+	background-color: black;
+	opacity: 90%;
+	font-size: 60px;
+	transition: font-size 0.5s ease;
+	}
+
+#front-text:hover {
+	font-size: 30px;
+	-o-animation-delay: 22s;
+	}
+	
+#cover-img {
+	object-fit: cover;
+	object-position:70%;
+	width: 100%;
+	height: 650px;
+}
+
+#about {
+	margin: 0px 10px 0px 10px;
+}
+
+#about-paragraphs {
+	font-size: 20px;
+}
+
+.social-link {
+	width: 300px; 
+	height: 100px;
+	border-radius: 909px;
+	border: none;
+	margin: 5px;
+	font-weight: bold;
+	background-color: black;
+}
+
+	/* start of landing page css */
+	#message-container{
+	  background-position: 70% 0%;
+	  margin: 1vb;
+	  height: 100%;
+	}
+	
+	#message-text{
+		position:absolute;
+		text-align:center;
+		display:flex;
+		height:100px;
+		width:100px;
+		left:50%;
+		top:50%;
+		margin-left:-25%;
+		color:white;
+		background-color: black;
+	  }
+	/* end of landing page css */
+}
